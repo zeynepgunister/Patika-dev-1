@@ -70,6 +70,37 @@ SELECT*FROM film WHERE title ~~* '%T%T%T%T%'
 SELECT*FROM film WHERE title LIKE 'C%' AND length>90 AND rental_rate=2.99;
 ```
 
+## Ödev 4
+
+1. SORU:
+   
+```ruby 
+SELECT DISTINCT replacement_cost FROM film;
+```
+2. SORU:
+   
+```ruby 
+SELECT COUNT (DISTINCT replacement_cost) FROM film;
+```
+3. SORU:
+   
+```ruby 
+SELECT COUNT(title LIKE 'T%' AND rating='G') FROM film;
+```
+
+4. SORU:
+```ruby
+SELECT COUNT(country LIKE '_____') FROM country;
+```
+
+5. SORU:
+```ruby
+SELECT COUNT (city) FROM city WHERE city ~~* 'R%';
+```
+
+
+
+
 
 
 
