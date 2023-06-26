@@ -155,5 +155,39 @@ SELECT COUNT(DISTINCT replacement_cost) FROM film
 WHERE length > 150;
 ```
 
+## ÖDEV 7:
+
+1. SORU:
+
+```ruby
+SELECT rating, COUNT(*) FROM film
+GROUP BY rating;
+```
+
+2. SORU:
+
+```ruby
+SELECT replacement_cost, COUNT(*) FROM film
+GROUP BY replacement_cost
+HAVING COUNT(*) > 50;
+```
+
+3. SORU:
+
+```ruby
+SELECT store_id,COUNT(*) FROM customer
+GROUP BY store_id;
+```
+
+4. SORU:
+
+```ruby
+SELECT country_id, COUNT(*) FROM city
+GROUP BY country_id
+ORDER BY COUNT(*) DESC
+LIMIT 1;
+```
+
+
 
 
