@@ -98,6 +98,34 @@ SELECT COUNT(country LIKE '_____') FROM country;
 SELECT COUNT (city) FROM city WHERE city ~~* 'R%';
 ```
 
+## ÖDEV 5 
+
+1. SORU:
+
+```ruby
+SELECT * FROM film
+WHERE title LIKE '%n'
+ORDER BY length DESC
+LIMIT 5;
+```
+2. SORU:
+
+```ruby
+SELECT * FROM film
+WHERE title LIKE '%n'
+ORDER BY length 
+OFFSET 5
+LIMIT 5;
+```
+
+3. SORU:
+
+```ruby
+SELECT * FROM customer
+WHERE store_id = '1'
+ORDER BY last_name DESC
+LIMIT 4;
+```
 
 
 
